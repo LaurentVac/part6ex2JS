@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>part 6 exo 2 js</title>
+</head>
+<body>
+    <div id="para">0</div>
+
+    
+<script>
+    let para = document.getElementById("para");
+     
+    for(let number= 1 ; number < 101; number++ ){
+      
+        console.log(number % 15);
+        if (number % 15 == 0){
+            para.innerHTML += '<p>...<p>';
+          
+           
+        }else{
+            para.innerHTML +="<p>" + number + "<p>";
+        }
+        
+
+        };
+</script>
+    
+</body>
+</html>
